@@ -1,0 +1,41 @@
+{
+  "name": "@summoned/ai",
+  "version": "0.1.0",
+  "description": "Summoned AI Gateway SDK — OpenAI-compatible client with routing, caching, guardrails, and multi-provider support",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai", "llm", "gateway", "openai", "anthropic", "gemini", "groq",
+    "bedrock", "sdk", "proxy", "multi-provider", "caching", "guardrails",
+    "summoned", "ai-gateway"
+  ],
+  "author": "Summoned Tech <dev@summoned.tech>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summoned-tech/summoned-sdk-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/summoned-tech/summoned-sdk-ts/issues"
+  },
+  "homepage": "https://github.com/summoned-tech/summoned-ai-gateway",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
